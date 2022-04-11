@@ -1,0 +1,151 @@
+
+.api{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: large;
+
+}
+ .search-boxx{
+  position: absolute;
+   top: 15%;
+  left:50%;  
+  transform: translate(-50%, -50%);
+  background:#2f3640;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+/* .search-boxx:hover > .input_text{
+  width: 240px;
+  padding: 0 6px;
+  background-color:red;
+} */
+.search-boxx:hover{
+  width: 220px;
+  padding: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.input_text:hover{
+ width: 200px;
+  padding: 0 6px;
+  float: left;
+ background-color: rgb(137, 199, 55);
+}
+/* SearchIcon{
+  align: center;
+} */
+ .a-search{
+  color: #18dae8;
+  float: right;
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.input_text{
+font-size: 16px;
+transition: 2s;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.status{
+  border: 0.1px solid rgb(173, 237, 248);
+  box-shadow: 2px 0.1px 15px 7px rgb(15, 211, 218);
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  width: 17vw;
+  height: 20vw;
+  border-radius:40%;
+}
+
+.green{
+  display: flex;
+ align-self: center;
+ right: 100px;
+ 
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+   
+ }
+ .red{
+  display: flex;
+  align-self: center;
+  right: 100px;
+  
+   width: 200px;
+   height: 100px;
+   overflow: hidden;
+ }
+ .green::before{
+   content: 'dddddddddd';
+ 
+   color: transparent;
+   font-size: 5em;
+   text-decoration-style: wavy;
+   text-decoration-color:green ;
+   text-decoration-line: underline;
+   animation: animate3 2s linear infinite;
+ }
+ 
+ @keyframes animate3 {
+   0% {
+     transform: translateX(-1px)
+   }
+   100%{
+     transform: translateX(-50px)
+   }
+ }
+
+.red::before{
+  content: 'dddddddddd';
+  color: transparent;
+  font-size: 5em;
+  text-decoration-style: wavy;
+  text-decoration-color:red ;
+  text-decoration-line: underline;
+  animation: animate3 5s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(-1px)
+  }
+  100%{
+    transform: translateX(-90px)
+  }
+}
+
+.result-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+  margin:auto;
+}
+
+@media screen and (max-width: 480px) {
+  div{
+    background-color: rgb(151, 209, 151);
+  }
+ 
+}
